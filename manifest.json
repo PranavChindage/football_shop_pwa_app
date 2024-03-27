@@ -1,0 +1,22 @@
+{
+    "name": "Football Shop",
+    "short_name": "Football Shop",
+    "description": "Your one-stop shop for football gear.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "./img/football image1.jpg",
+        "sizes": "225x225",
+        "type": "image/png"
+      },
+      {
+        "src": "./img/football image2.jpg",
+        "sizes": "225x225",
+        "type": "image/png"
+      }
+    ]
+  }
+  

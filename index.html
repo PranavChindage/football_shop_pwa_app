@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Shop</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h1>Football Shop</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="product-cards">
+            <div class="card">
+                <img src="./img/football image1.jpg" alt="Product 1">
+                <h2>Football</h2>
+                <p>Description of the football</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/football image2.jpg" alt="Product 2">
+                <h2>Football Shoes</h2>
+                <p>Description of the football shoes</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more cards for other products -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Football Shop</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                registerSW();
+            });
+
+            async function registerSW() {
+                try {
+                    await navigator.serviceWorker.register('/serviceworker.js');
+                    console.log('Service Worker registered successfully');
+                } catch (error) {
+                    console.log('Service Worker registration failed:', error);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
